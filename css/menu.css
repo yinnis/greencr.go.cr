@@ -1,0 +1,26 @@
+#menu{
+    display: flex;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #488000;
+    padding-top: 102px;
+}
+
+#container .principal{
+    float: left;
+    color: white;
+    border-right: 1px solid #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px 10px 25px;
+}
+
+#container a:hover{
+font-size: larger;
+font-weight: bold;
+background-color:  #b5f068;
+}
+
+#container a.last{
+    border-right: 0px;
+}
