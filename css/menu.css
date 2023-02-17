@@ -18,9 +18,16 @@
 #container a:hover{
 font-size: larger;
 font-weight: bold;
-background-color:  #b5f068;
+background-color:  #60a376;
 }
 
 #container a.last{
     border-right: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+    #container, #container .principal{
+        width: 100%;
+        border-right: 0px;
+    }
 }

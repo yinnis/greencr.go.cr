@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 body{
-    background: #fff url('../images/background.png') repeat;
+    background: #488000 url('../images/background.png')  repeat-x;
     font-size: 11px;
     font-family: 'Trebuchet MS', sans-serif;
+    color: black;
     line-height: 18px;
-    
 }
 
 a{
-    color: #488000;
+    color: white;
     text-decoration: underline;
 }
 
@@ -32,10 +32,10 @@ p{
 
 img.picA{
     position: relative;
-    top: -2px;
+    top: -1px;
     width: 45px;
     height: 45px;
-    padding: 5px;
+    padding: 3px;
 }
 
 img.picB{
@@ -55,26 +55,24 @@ img.floatleft{
 #outer{
     position: relative;
     width: 60%;
-    height: 920px;
-    margin-top: 11px;
+    margin-top: 10px;
     background: #fff;
     border: initial;
     overflow: overlay;
     margin: 0px auto;
-    padding: 5px 5px 5px px;
 }
 
 #header{
-    max-width: 100%;
+    max-width: 110%;
     height: 170px;
 }
 
 #header #logo{
     float: left;
     width: 33%;
-    height: 170px;
     color: #fff;
     text-align: center;
+    height: 170px;
     padding-top: 20px;
 }
 
@@ -85,6 +83,7 @@ img.floatleft{
     top: 50px;
     left: 10px;
     font-weight: bold;
+    padding-left: 40px;
 }
 
 #pricipalcontent{
@@ -93,23 +92,24 @@ img.floatleft{
 }
 
 #secondarycontent{
-    width: 70%;
+    width: 65%;
     float: right;
 }
 
 #secondarycontent h3{
     font-size: 16px;
     line-height: 25px;
-    color: #656551;
+    color: #080808;
     letter-spacing: -1;
     padding: 0px 0px 10px 15px;
     margin-bottom: 25px;
 }
 
 #secondarycontent .content{
-    
-    padding: 0px 10px 0px 10px;
     margin-bottom: 20px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    margin-left: 1px;
 }
 
 #primarycontent{
@@ -120,19 +120,19 @@ img.floatleft{
 
 #primarycontent h3{
     font-size: 18px;
-    line-height: 25px;
-    color: #656551;
+    padding-top: 10px;
+    color: #080808;
     letter-spacing: -1;
-    padding: 3px 3px 3px 5px;
+    padding: 0px 10px 0px 10px;
     margin-bottom: 20px;
 }
 
 #primarycontent h4{
     font-size: 18px;
-    line-height: 25px;
-    color: #1daf0a;
+    line-height: 10px;
+    color: black;
     letter-spacing: -1;
-    padding: 0px 0px 5px 5px;
+    padding: 0px 10px 0px 10px;
     margin-bottom: 20px;
 }
 
@@ -141,10 +141,8 @@ img.floatleft{
 }
 
 #primarycontent .post .content{
+    padding: 0px 10px 0px 10px;
     margin-bottom: 20px;
-    padding: 0px;
-    text-align: justify;
-    margin-left: 5px;
 
 }
 
@@ -158,6 +156,7 @@ img.floatleft{
     padding: 0px;
     list-style: none;
     text-align: center;
+    background-color: #488000;
 }
 
 
@@ -172,13 +171,29 @@ img.floatleft{
 }
 
 #footer-bottom #footer-menu ul li ::after{
-    content: "/";
+    content: "|";
 }
 
 #footer-bottom #footer-menu ul li :last-child::after{
     content: "";
 }
 
+@media screen and (max-width: 1000px) {
+    #header #logo{
+        width: 100%;
+    }
+
+    #header #splash{
+        display: none;
+    }
+
+    #secondarycontent{
+        display: none;
+    }
+    #primarycontent{
+        width: 100%;
+    }
+}
 
 
 
